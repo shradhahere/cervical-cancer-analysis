@@ -1,4 +1,4 @@
-Sure, here is a sample `README.md` file that you can use for your GitHub repository. This README includes all the necessary steps and information to help others understand and deploy the project using AWS services.
+This README includes all the necessary steps and information to help others understand and deploy the project using AWS services.
 
 ```markdown
 # Cervical Cancer Risk Factors Analysis
