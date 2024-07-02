@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/notebooks
+hooks:
+  AfterInstall:
+    - location: scripts/install_dependencies.sh
+      runas: ubuntu
+  ApplicationStart:
+    - location: scripts/start_jupyter.sh
+      runas: ubuntu
