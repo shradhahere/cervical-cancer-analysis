@@ -8,3 +8,6 @@ hooks:
     - location: scripts/install_dependencies.sh
       timeout: 300
       runas: ec2-user
+    - location: scripts/start_jupyter.sh
+      timeout: 300
+      runas: ec2-user
