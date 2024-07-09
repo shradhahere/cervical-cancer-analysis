@@ -2,11 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/notebooks
+    destination: /home/ec2-user/cervical-cancer-analysis
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies.sh
-      runas: ubuntu
-  ApplicationStart:
-    - location: scripts/start_jupyter.sh
-      runas: ubuntu
+      timeout: 300
+      runas: ec2-user
