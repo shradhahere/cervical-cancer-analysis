@@ -1,4 +1,4 @@
 #!/bin/bash
-sudo apt update
-sudo apt install -y python3-pip
-pip3 install pandas seaborn matplotlib scikit-learn jupyter
+sudo yum update -y
+sudo yum install python3-pip -y
+pip3 install -r /home/ec2-user/cervical-cancer-analysis-main/requirements.txt
